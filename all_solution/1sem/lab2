@@ -1,0 +1,11 @@
+SELECT ((30*20)/10)+(20*10) AS X ; 
+
+SELECT first_name,last_name FROM Employees WHERE  Department_id != 50; 
+
+SELECT first_name,last_name,
+CASE 
+WHEN job_id = 'SA_REP' THEN 'Торговый представитель'
+WHEN job_id = 'SA_MAN' THEN 'Менеджер по продажам'
+ELSE 'Другое' END AS job_id FROM employees; 
+
+SELECT max(salary),min(salary),avg(salary) FROM employees;
